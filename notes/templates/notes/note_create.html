@@ -1,0 +1,14 @@
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="title" placeholder="Titre" required><br><br>
+    <textarea name="content" placeholder="Contenu" required></textarea><br><br>
+
+    <select name="categorie">
+        <option value="perso">Personnel</option>
+        <option value="travail">Travail</option>
+        <option value="etude">Étude</option>
+        <option value="autre">Autre</option>
+    </select><br><br>
+
+    <button type="submit">Ajouter</button>
+</form>

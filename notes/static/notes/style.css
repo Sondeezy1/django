@@ -1,0 +1,113 @@
+
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff0f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #d63384;
+}
+
+form {
+    background-color: #ffffff;
+    border: 2px solid #f3c2d3;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #e83e8c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d63384;
+}
+
+.note {
+    background-color: #ffffff;
+    border-left: 5px solid #e83e8c;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* pour occuper presque toute la hauteur de la page */
+    text-align: center;
+    margin-top: 0;
+}
+
+.citation {
+    font-style: italic;
+    color: #666;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.btn-group {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 14px 28px;
+    margin: 10px;
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 17px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* espace si tu ajoutes des icônes */
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #43A047, #1B5E20);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+}
+
+.btn:active {
+    transform: scale(0.97);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.citation:hover {
+    color: #000;
+    font-style: normal;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}

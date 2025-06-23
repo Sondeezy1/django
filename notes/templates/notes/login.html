@@ -1,0 +1,21 @@
+{% extends "notes/base.html" %}
+{% load static %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block content %}
+<div class="landing">
+    <h2>Se connecter</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Connexion</button>
+    </form>
+    
+    <div class="btn-group">
+        <a href="{% url 'landing' %}" class="btn">
+            🏠 Retour à l'accueil
+        </a>
+    </div>
+</div>
+{% endblock %}

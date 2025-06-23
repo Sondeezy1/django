@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Mon site{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'notes/style.css' %}">
+
+</head>
+<body>
+    <div class="container">
+        {% block content %}
+        <!-- Contenu spécifique à chaque page -->
+        {% if user.is_authenticated %}
+  <p>Bonjour, {{ user.username }} !</p>
+ <a href="{% url 'logout' %}">Se déconnecter</a>
+
+{% else %}
+  <a href="{% url 'login' %}">Se connecter</a>
+  <a href="{% url 'register' %}">S’inscrire</a>
+{% endif %}
+
+
+        {% endblock %}
+    </div>
+</body>
+</html>
